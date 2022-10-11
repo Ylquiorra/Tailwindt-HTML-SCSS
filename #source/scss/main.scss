@@ -1,0 +1,802 @@
+// Файл обнуляющих стилей
+@import "_nullstyle";
+@import "_header";
+@import "_hero";
+@import "_footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800&display=swap");
+
+//==========================//
+
+$white-color: #fff;
+$gray-color: #9ba9b4;
+$black-color: #151719;
+$violet-color: #5d5dff;
+$white-green: #c6f6d5;
+$black-green: #36a269;
+
+$line-height: 150%;
+
+//==========================//
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: $gray-color;
+  background-color: $black-color;
+  letter-spacing: -0.5px;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.lets-body {
+  &__container {
+    max-width: 798px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.small-container {
+  max-width: 798px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+//--------------------------//
+
+// Устройства Medium (планшеты, менее 992 пикселей)
+@media (max-width: 991.98px) {
+  .lets-body {
+    &__tittle {
+      font-size: 46px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  //-----------------//
+  .tittle {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: $line-height;
+    color: $light-gray-color;
+  }
+  .under-tittle-text {
+    font-size: 18px;
+    line-height: $line-height;
+    letter-spacing: -0.25px;
+  }
+  //-----------------//
+  .lets-start {
+    margin: 0 0 80px 0;
+  }
+  .items-grid {
+    grid-gap: 32px;
+  }
+  .item-grid {
+    &__sub-tittle {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: $light-gray-color;
+      margin: 0 0 8px 0;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  //---------------Grid в шахматном прорядке---------------//
+
+  .facts {
+    margin: 0 0 70px 0;
+  }
+
+  .body-product {
+    &__container {
+      text-align: center;
+    }
+
+    &__label {
+      margin: 0 0 16px 0;
+    }
+
+    &__tittle {
+      margin: 0 0 16px 0;
+    }
+
+    &__text {
+      padding: 0 30px;
+      margin: 0 0 80px 0;
+    }
+
+    &__grid-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column-gap: 22px;
+      grid-row-gap: 64px;
+    }
+  }
+  .green-label {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: $line-height;
+    color: #36a269;
+    background: #c6f6d5;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 15px;
+    padding: 4px 12px;
+  }
+
+  .product-grid-item {
+    &__body {
+    }
+
+    &__upper-tittle {
+      font-family: "Architects Daughter";
+      font-size: 20px;
+      line-height: $line-height;
+      letter-spacing: 0.25px;
+      color: $violet-color;
+      margin: 0 0 8px 0;
+    }
+
+    &__tittle {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 131%;
+      letter-spacing: -0.25px;
+      color: $light-gray-color;
+      margin: 0 0 8px 0;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: $gray-color;
+      margin: 0 0 16px 0;
+    }
+
+    &__list {
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: $gray-color;
+    }
+  }
+
+  //----------reviews----------------//
+
+  .body-reviews {
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 22px;
+    }
+  }
+
+  .reviews-item {
+    background: #25282c;
+    padding: 24px;
+
+    &__text {
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      padding: 0 0 24px 0;
+      border-bottom: #33363a 1px solid;
+      margin: 0 0 20px 0;
+    }
+
+    &__name-specialization {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: $white-color;
+    }
+  }
+
+  //---------------------Sub-----------------//
+
+  .subscribe {
+    margin: 0 0 64px 0;
+    &__container {
+    }
+
+    &__body {
+    }
+  }
+  .body-subscribe {
+    background: #5d5dff;
+    padding: 38px 38px;
+
+    &__tittle {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 131%;
+      letter-spacing: $line-height;
+      color: #ffffff;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #e2e1ff;
+    }
+
+    &__input {
+      flex: 1 1 auto;
+      background: #4b4acf;
+      border: 1px solid #8d8dff;
+      border-radius: 2px;
+      padding: 12px 16px;
+      color: #e2e1ff;
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      margin: 0 8px 0 0;
+    }
+    &__input::placeholder {
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #ababff;
+    }
+
+    &__button {
+      background: #f4f4ff;
+      box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+      border-radius: 2px;
+      color: $violet-color;
+    }
+  }
+}
+@media (max-width: 842.98px) {
+  .body-reviews {
+    &__container {
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 24px;
+    }
+  }
+  .footer-navigation-body {
+    &__grid-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      grid-auto-rows: 1fr 1fr;
+    }
+
+    &__item {
+      &_1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        max-width: none;
+      }
+
+      &_2 {
+        grid-row-start: 2;
+      }
+
+      &_3 {
+        grid-row-start: 2;
+      }
+
+      &_4 {
+        grid-row-start: 2;
+      }
+    }
+  }
+}
+
+// Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей)
+@media (max-width: 767.98px) {
+  .lets-start {
+    margin: 0 0 40px 0;
+  }
+  .button {
+    color: $white-color;
+    padding: 10px 28px;
+    background: #5d5dff;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: $line-height;
+    letter-spacing: -0.25px;
+  }
+  .button:hover {
+    box-shadow: 0px 1px 10px rgba(93, 93, 255, 0.993);
+  }
+  .body-subscribe {
+    &__button {
+      background: #f4f4ff;
+      box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+      border-radius: 2px;
+      color: $violet-color;
+    }
+  }
+  .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .lets-body {
+    &__tittle {
+      font-size: 40px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  //----//
+  .body-subscribe {
+    background: #5d5dff;
+    padding: 32px 32px;
+
+    &__tittle {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 131%;
+      letter-spacing: $line-height;
+      color: #ffffff;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #e2e1ff;
+    }
+    &__row {
+      display: flex;
+      align-items: center;
+      margin: 0 -15px;
+    }
+    &__item {
+      padding: 0 15px;
+    }
+
+    &__body-text {
+      flex: 1 1 50%;
+    }
+    &__input {
+      flex: 1 1 auto;
+      background: #4b4acf;
+      border: 1px solid #8d8dff;
+      border-radius: 2px;
+      padding: 12px 16px;
+      color: #e2e1ff;
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      margin: 0 8px 0 0;
+    }
+    &__input::placeholder {
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #ababff;
+    }
+
+    &__button {
+      background: #f4f4ff;
+      box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+      border-radius: 2px;
+      color: $violet-color;
+    }
+  }
+}
+@media (max-width: 709.98px) {
+  .body-subscribe {
+    background: #5d5dff;
+    padding: 32px 32px;
+    text-align: center;
+
+    &__tittle {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 131%;
+      letter-spacing: $line-height;
+      color: #ffffff;
+    }
+
+    &__text {
+      margin: 0 0 16px 0;
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #e2e1ff;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__item {
+      padding: 0 15px;
+    }
+
+    &__body-text {
+      flex: 1 1 50%;
+    }
+    &__input {
+      flex: 1 1 auto;
+      background: #4b4acf;
+      border: 1px solid #8d8dff;
+      border-radius: 2px;
+      padding: 12px 16px;
+      color: #e2e1ff;
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      margin: 0 8px 0 0;
+    }
+    &__input::placeholder {
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #ababff;
+    }
+
+    &__button {
+      background: #f4f4ff;
+      box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+      border-radius: 2px;
+      color: $violet-color;
+    }
+  }
+}
+@media (max-width: 701.98px) {
+  //-----------------//
+  .tittle {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: $line-height;
+    color: $light-gray-color;
+  }
+  .under-tittle-text {
+    font-size: 16px;
+    line-height: $line-height;
+    letter-spacing: -0.25px;
+  }
+  //------------------//
+  .header {
+    margin: 0 0 40px 0;
+  }
+
+  .lets-body {
+    &__tittle {
+      font-size: 36px;
+    }
+
+    &__text {
+      letter-spacing: -0.25px;
+      margin: 0 0 32px 0;
+      padding: 0 40px;
+      line-height: $line-height;
+    }
+
+    &__item {
+      margin: 0 0 36px 0;
+    }
+  }
+  .item-grid {
+    &__sub-tittle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: $light-gray-color;
+      margin: 0 0 8px 0;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .body-product {
+    &__text {
+      padding: 0 30px;
+      margin: 0 0 40px 0;
+    }
+
+    &__grid-items {
+      display: grid;
+      grid-template-columns: auto;
+      grid-row-gap: 40px;
+    }
+  }
+
+  .product-grid-item {
+    &__image {
+      //* не изменяется в масштабе (доделать!!!!)
+      position: relative;
+      overflow: hidden;
+      padding: 0 0 21rem 0;
+    }
+
+    &__1 {
+      align-self: flex-end;
+    }
+
+    &__2 {
+    }
+
+    &__3 {
+    }
+
+    &__4 {
+      padding: 0 0 0 0px;
+      grid-row-start: 3;
+    }
+
+    &__5 {
+    }
+
+    &__6 {
+    }
+  }
+  .body-facts {
+    &__text {
+      text-align: center;
+      margin: 0 0 40px 0;
+    }
+  }
+  .items-grid {
+    padding: 0 0 40px 0;
+  }
+  .facts {
+    margin: 0 0 40px 0;
+  }
+  .about-product {
+    &__body {
+      margin: 0 0 40px 0;
+      padding: 0 0 40px 0;
+    }
+  }
+  .reviews {
+    margin: 0 0 40px 0;
+  }
+  .body-tittle-reviews {
+    &__text {
+      margin: 0 0 40px 0;
+    }
+  }
+  .subscribe {
+    margin: 0 0 32px 0;
+  }
+}
+
+// Устройства X-Small (портретные телефоны, менее 576 пикселей)
+@media (max-width: 575.98px) {
+  .footer-icon-socialmedia {
+    padding: 0 0 32px 0;
+    &__container {
+    }
+
+    &__body {
+    }
+  }
+  .socialmedia-body {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__copyright {
+      &_text {
+        font-size: 14px;
+        line-height: 157%;
+        color: #9ba9b4;
+        margin: 0 0 16px 0;
+      }
+    }
+
+    &__icons {
+    }
+
+    &__icon {
+      height: 16px;
+      width: 16px;
+      margin: 0 16px 0 0;
+    }
+    &__icon:last-child {
+      margin-right: 0px;
+    }
+  }
+  .navigation-footer {
+    margin: 0 0 24px 0;
+  }
+  .footer-icon-socialmedia {
+    padding: 0 0 32px 0;
+  }
+}
+@media (max-width: 500.98px) {
+  .video {
+    display: block;
+    align-items: center;
+    position: relative;
+
+    &__content {
+      height: 35rem;
+      width: 100%;
+      z-index: 5;
+    }
+  }
+  .video::before {
+    content: url("../img/header/CombinedShape.svg");
+    position: absolute;
+    z-index: -1;
+    bottom: -79px;
+    left: -225px;
+    height: 100%;
+    width: 100%;
+  }
+  .footer-navigation-body {
+    &__grid-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      grid-auto-rows: 1fr 1fr 1fr;
+      grid-row-gap: 10px;
+      align-items: center;
+    }
+
+    &__item {
+      &_1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        max-width: none;
+      }
+
+      &_2 {
+        grid-row-start: 2;
+      }
+
+      &_3 {
+        grid-row-start: 3;
+      }
+
+      &_4 {
+        grid-row-start: 3;
+      }
+    }
+  }
+
+  .body-subscribe {
+    background: #5d5dff;
+    padding: 24px 24px;
+    text-align: center;
+
+    &__tittle {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 131%;
+      letter-spacing: $line-height;
+      color: #ffffff;
+    }
+
+    &__text {
+      margin: 0 0 16px 0;
+      font-size: 16px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #e2e1ff;
+    }
+    &__item {
+      padding: 0 15px;
+    }
+
+    &__body-text {
+      flex: 1 1 50%;
+    }
+    &__input {
+      flex: 1 1 auto;
+      background: #4b4acf;
+      border: 1px solid #8d8dff;
+      border-radius: 2px;
+      padding: 12px 16px;
+      color: #e2e1ff;
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      margin: 0 0 8px 0;
+    }
+    &__input::placeholder {
+      font-size: 14px;
+      line-height: $line-height;
+      letter-spacing: -0.25px;
+      color: #ababff;
+    }
+    &__form {
+      flex-direction: column;
+    }
+
+    &__button {
+      background: #f4f4ff;
+      box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+      border-radius: 2px;
+      color: $violet-color;
+    }
+  }
+}
+
+@media (max-width: 433.98px) {
+  .items-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .item-grid {
+    &__text {
+      margin: 0 auto;
+      max-width: 301px;
+    }
+  }
+}
+@media (max-width: 399.98px) {
+  .lets-body {
+    &__tittle {
+      font-size: 32px;
+    }
+    &__text {
+      margin: 0 0 30px 0;
+      padding: 0 25px;
+    }
+  }
+
+  .button {
+    padding: 6px 20px;
+  }
+
+  .video::before {
+    bottom: -25px;
+    left: -294px;
+  }
+
+  .menu {
+    &__item li {
+      margin: 0 20px 0 0;
+    }
+  }
+  .lets-body {
+    &__item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 370.98px) {
+}

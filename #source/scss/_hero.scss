@@ -1,0 +1,543 @@
+//==========================//
+
+$white-color: #fff;
+$light-gray-color: #d9e3ea;
+$gray-color: #9ba9b4;
+$black-color: #151719;
+$violet-color: rgb(93, 93, 255);
+$white-green: #c6f6d5;
+$black-green: #36a269;
+
+$line-height: 150%;
+
+//==========================//
+
+.lets-start {
+    margin: 0 0 128px 0;
+    &__container {
+    }
+
+    &__body {
+    }
+}
+.lets-body {
+    margin: 0 auto;
+    text-align: center;
+    &__tittle {
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 119%;
+        letter-spacing: -0.5px;
+        color: #d9e3ea;
+        margin: 0 0 16px 0;
+    }
+
+    &__text {
+        letter-spacing: -0.25px;
+        margin: 0 0 32px 0;
+        padding: 0 80px;
+        line-height: $line-height;
+    }
+
+    &__item {
+        margin: 0 0 64px 0;
+    }
+
+    &__button-violet {
+        display: inline-block;
+        padding: 12px 32px;
+        margin: 0 8px 0 0;
+    }
+
+    &__button-gray {
+        display: inline-block;
+        padding: 12px 32px;
+    } /*
+    &__video {
+        position: relative;
+        overflow: hidden;
+        padding: 0 0 58% 0;
+    }
+    &__video img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__video::before{
+        content: '';
+        background: url('../img/header/CombinedShape.svg') 1px 1px no-repeat/cover;
+        width: 100%;
+        height: 100%;   
+    }
+*/
+    &__video {
+    }
+}
+
+.video {
+    display: block;
+    align-items: center;
+    position: relative;
+
+    &__content {
+        height: 574px;
+        width: 100%;
+        z-index: 5;
+    }
+}
+.video::before {
+    content: url("../img/header/CombinedShape.svg");
+    position: absolute;
+    z-index: -1;
+    bottom: -79px;
+    left: -129px;
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+}
+//---------------Grid таблица ФАКТОВ------------------//
+
+.slider {
+    position: relative;
+    &__item {
+    }
+    &__item_1 {
+    }
+    &__item_2 {
+    }
+    &__item_3 {
+    }
+    &__item_4 {
+    }
+    &__item_5 {
+    }
+    &__item_6 {
+    }
+}
+
+.facts {
+    margin: 0 0 80px 0;
+    &__container {
+        padding: 0 0 80px 0;
+    }
+
+    &__body {
+        border-bottom: #33363a 1px solid;
+    }
+}
+.body-facts {
+    &__container {
+    }
+
+    &__tittle {
+        text-align: center;
+        margin: 0 0 17px 0;
+    }
+
+    &__text {
+        text-align: center;
+        margin: 0 0 80px 0;
+    }
+
+    &__gird-body {
+    }
+
+    &__gird-items {
+    }
+}
+.small-container {
+}
+.tittle {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: $line-height;
+    color: $light-gray-color;
+}
+.under-tittle-text {
+    font-size: 20px;
+    line-height: $line-height;
+    letter-spacing: -0.25px;
+}
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 64px;
+    padding: 0 0 80px 0;
+
+    &__item {
+    }
+}
+.item-grid {
+    &__body {
+        text-align: center;
+    }
+
+    &__image {
+        margin: 0 0 16px 0;
+    }
+    &__image img {
+        height: 64px;
+        width: 64px;
+    }
+
+    &__sub-tittle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: $light-gray-color;
+        margin: 0 0 8px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+    }
+
+    &__1 {
+    }
+
+    &__2 {
+    }
+
+    &__3 {
+    }
+
+    &__4 {
+    }
+
+    &__5 {
+    }
+
+    &__6 {
+    }
+}
+
+//---------------Grid в шахматном прорядке---------------//
+
+.about-product {
+    &__container {
+    }
+
+    &__body {
+        margin: 0 0 80px 0;
+        padding: 0 0 80px 0;
+        border-bottom: #33363a 1px solid;
+    }
+}
+.body-product {
+    &__container {
+        text-align: center;
+    }
+
+    &__label {
+        margin: 0 0 16px 0;
+    }
+
+    &__tittle {
+        margin: 0 0 16px 0;
+    }
+
+    &__text {
+        padding: 0 30px;
+        margin: 0 0 80px 0;
+    }
+
+    &__grid-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 80px;
+    }
+}
+
+.green-label {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: $line-height;
+    color: #36a269;
+    background: #c6f6d5;
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+    border-radius: 15px;
+
+    padding: 4px 12px;
+}
+
+.product-grid-item {
+    &__body {
+    }
+
+    &__upper-tittle {
+        font-family: "Architects Daughter";
+        font-size: 20px;
+        line-height: $line-height;
+        letter-spacing: 0.25px;
+        color: $violet-color;
+        margin: 0 0 8px 0;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 131%;
+        letter-spacing: -0.25px;
+        color: $light-gray-color;
+        margin: 0 0 8px 0;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: $gray-color;
+        margin: 0 0 16px 0;
+    }
+
+    &__list {
+        font-size: 18px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: $gray-color;
+    }
+
+    &__point {
+        margin: 0 0 8px 0;
+        position: relative;
+    }
+    &__point:last-child {
+        margin-bottom: 0;
+    }
+    &__point::before {
+        //! худо-бедно как то работает. нужно написать в группу с этим в вопросом
+        content: url("../img/hero/Path.svg");
+        margin: 0 8px 0 0;
+    }
+
+    &__image {
+        //* не изменяется в масштабе (доделать!!!!)
+        position: relative;
+        overflow: hidden;
+        padding: 0 0 74% 0;
+    }
+    &__image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+    &__1 {
+        align-self: center;
+        max-width: 500px;
+    }
+
+    &__2 {
+        align-self: center;
+    }
+
+    &__3 {
+        align-self: center;
+    }
+
+    &__4 {
+        align-self: center;
+        max-width: 500px;
+        padding: 0 0 0 40px;
+    }
+
+    &__5 {
+        align-self: center;
+        max-width: 500px;
+    }
+
+    &__6 {
+        align-self: center;
+    }
+}
+
+//----------reviews----------------//
+.reviews {
+    margin: 0 0 80px 0;
+    &__container {
+    }
+
+    &__body {
+    }
+}
+.body-reviews {
+    &__container {
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;
+    }
+}
+.body-tittle-reviews {
+    &__container {
+        text-align: center;
+    }
+
+    &__tittle {
+        margin: 0 0 16px 0;
+    }
+
+    &__text {
+        margin: 0 0 80px 0;
+    }
+}
+
+.reviews-item {
+    background: #25282c;
+    padding: 24px;
+
+    &__quotes {
+        position: relative;
+        height: 48px;
+        width: 48px;
+        margin: 0 0 16px 0;
+    }
+    &__quotes::after {
+        content: url("../img/hero/quotes/marks.svg");
+        top: 0;
+        left: 33px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        padding: 0 0 24px 0;
+        border-bottom: #33363a 1px solid;
+        margin: 0 0 20px 0;
+    }
+
+    &__name-specialization {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: $white-color;
+    }
+    &__1 {
+    }
+    &__2 {
+    }
+
+    &__3 {
+    }
+}
+.reviews-item:hover {
+    box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+}
+.transparent-color {
+    color: #33363a;
+}
+.violet-color {
+    color: $violet-color;
+}
+
+//---------------------Sub-----------------//
+
+.subscribe {
+    margin: 0 0 64px 0;
+    &__container {
+    }
+
+    &__body {
+    }
+}
+.body-subscribe {
+    background: #5d5dff;
+    padding: 64px 48px;
+    &__subshape {
+        position: relative;
+    }
+    &__subshape img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin: 0 -30px;
+    }
+    &__item {
+        padding: 0 30px;
+    }
+
+    &__body-text {
+        flex: 1 1 50%;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 131%;
+        letter-spacing: $line-height;
+        color: #ffffff;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: #e2e1ff;
+    }
+
+    &__form-block {
+        flex: 1 1 50%;
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__input {
+        flex: 1 1 auto;
+        background: #4b4acf;
+        border: 1px solid #8d8dff;
+        border-radius: 2px;
+        padding: 12px 16px;
+        color: #e2e1ff;
+        font-size: 16px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        margin: 0 8px 0 0;
+        z-index: 2;
+    }
+    &__input::placeholder {
+        font-size: 16px;
+        line-height: $line-height;
+        letter-spacing: -0.25px;
+        color: #ababff;
+    }
+    &__input:valid {
+        background-color: #043d1f;
+    }
+
+    &__button {
+        z-index: 2;
+        background: #f4f4ff;
+        box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+        border-radius: 2px;
+        color: $violet-color;
+    }
+}
